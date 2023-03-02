@@ -12,8 +12,10 @@ loginForm.addEventListener('submit',(event) => {
     };
     console.log(inputValue);
 
-    if(inputValue.email.value == '' || inputValue.password.value == '');
-    window.alert ('Всі поля мають бути заповнені!')
+    if(email.value === '' || password.value === ''){
+        window.alert ('Всі поля мають бути заповнені!')
+    };
+   
 
    event.target.reset();
    
