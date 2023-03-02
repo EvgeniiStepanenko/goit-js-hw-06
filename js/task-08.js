@@ -7,15 +7,16 @@ loginForm.addEventListener('submit',(event) => {
         elements :{ email, password},
     } = event.currentTarget;
     const inputValue = {
-        email,
-        password,
+        email: `${email.value}`,
+        password: `${password.value}`
     };
-    // console.log(inputValue);
+    console.log(inputValue);
 
-    if(inputValue.email.value == '' || inputValue.password.value == '')
+    if(inputValue.email.value == '' || inputValue.password.value == '');
     window.alert ('Всі поля мають бути заповнені!')
 
    event.target.reset();
+   
 
 });
 
