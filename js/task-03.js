@@ -28,4 +28,5 @@ const markup = images.map((el) => makeImage(el));
 galleryEl.insertAdjacentHTML('beforeend', markup.join(''));
 
 galleryEl.style.listStyle = "none";
+galleryEl.style.display = "flex";
 // console.log(galleryEl);
